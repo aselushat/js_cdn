@@ -5,9 +5,6 @@
  * 
  * 3.0 | Muffin Group
  */
-document.addEventListener("DOMContentLoaded", function(event) { 
-  //do work
-
 (function( $ ){
 	"use strict";
 	
@@ -116,5 +113,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	};
 
 })(jQuery);
-	
-	});
