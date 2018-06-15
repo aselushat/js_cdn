@@ -1,5 +1,5 @@
 
-var $j = jQuery.noConflict();
+var $j = $.noConflict();
 
 var http = createRequestObject();
 var areal = Math.random() + "";
@@ -42,8 +42,8 @@ function sendRequest() {
 	}
 	catch(e){}
 	finally{
-	jQuery('#contactform').slideUp("slow").hide();
-	jQuery('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	$('#contactform').slideUp("slow").hide();
+	$('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 function sendRequest_booking() {
@@ -70,8 +70,8 @@ function sendRequest_booking() {
 	}
 	catch(e){}
 	finally{
-	jQuery('#contactform_booking').slideUp("slow").hide();
-	jQuery('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	$('#contactform_booking').slideUp("slow").hide();
+	$('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 
@@ -90,8 +90,8 @@ function sendRequest_loans() {
 	}
 	catch(e){}
 	finally{
-	jQuery('#contactform_popup').slideUp("slow").hide();
-	jQuery('#contactWrapper_popup').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	$('#contactform_popup').slideUp("slow").hide();
+	$('#contactWrapper_popup').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 
@@ -111,8 +111,8 @@ function sendRequest_popup() {
 	}
 	catch(e){}
 	finally{
-	jQuery('#contactform_popup').slideUp("slow").hide();
-	jQuery('#contactWrapper_popup').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	$('#contactform_popup').slideUp("slow").hide();
+	$('#contactWrapper_popup').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 
@@ -138,8 +138,8 @@ function sendRequest_news() {
 	catch(e){
 	}
 	finally{
-	jQuery('#newsletterform').slideUp("slow").hide();
-	jQuery('#newsletterform').parent().append('<div class="success"><h4>Subscription Successfully Sent!</h4><br><p>Your email: '+email+' has been registered.</p></div>');
+	$('#newsletterform').slideUp("slow").hide();
+	$('#newsletterform').parent().append('<div class="success"><h4>Subscription Successfully Sent!</h4><br><p>Your email: '+email+' has been registered.</p></div>');
 	
 	}
 }
@@ -168,7 +168,7 @@ function check_values() {
 	var valid = '';
 
 	
-	var $j = jQuery.noConflict();
+	var $j = $.noConflict();
 	
 	var name = '';
 	var email = '';
@@ -256,7 +256,7 @@ function check_values_loans() {
 	var valid = '';
 
 	
-	var $j = jQuery.noConflict();
+	var $j = $.noConflict();
 	
 	var name = '';
 	var subject = '';
@@ -328,7 +328,7 @@ function check_values_booking() {
 	var valid = '';
 
 	
-	var $j = jQuery.noConflict();
+	var $j = $.noConflict();
 	
 	var name = '';
 	var email = '';
@@ -518,7 +518,7 @@ function check_values_popup() {
 	var valid = '';
 
 	
-	var $j = jQuery.noConflict();
+	var $j = $.noConflict();
 	var name = document.getElementById("name_popup").value;
 	var email = document.getElementById("email_popup").value;
 	var subject = document.getElementById("subject_popup").value;
@@ -586,7 +586,7 @@ function check_values_popup() {
 function check_values_news() {
 	//Form
 	var valid = '';
-	var $j = jQuery.noConflict();
+	var $j = $.noConflict();
 	
 	var name = '';
 	var email = '';
